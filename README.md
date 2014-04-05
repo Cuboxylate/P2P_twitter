@@ -18,20 +18,20 @@ Main() is hosted in P2PTwitter.java. It creates three
 threads running the StatusUpdater, P2PServer and
 P2PClient methods.
 
-Communication acts as a shared storage space for all of
+__Communication__ acts as a shared storage space for all of
 the threads, storing the profiles of the local user and 
 their peers. Peers are specified in the 
 participants.properties file.
 
-StatusUpdater loops asking for the local user's status.
+__StatusUpdater__ loops asking for the local user's status.
 When one is accepted it prints all of the current statuses
 the server has received.
 
-P2PServer listens to the created UDP datagram socket. When
+__P2PServer__ listens to the created UDP datagram socket. When
 it receives a status from a peer, it saves it locally 
 against that peer's profile.
 
-P2PClient sends out the local user's status at random 
+__P2PClient__ sends out the local user's status at random 
 intervals between 1 and 3 seconds. It concatenates the 
 string message with the local user's identifier, then
 packages it within a datagram packet and sends it out to
