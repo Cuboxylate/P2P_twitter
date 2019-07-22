@@ -1,8 +1,5 @@
 # P2P Twitter 
 
-This project was a university assignment for my networks
-course. The assignment specifications are included.
-
 #### Objective
 Create a P2P messaging client that allows the user to 
 post statuses (with max length 140 chars) and displays
